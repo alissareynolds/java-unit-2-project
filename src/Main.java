@@ -67,7 +67,7 @@ public class Main {
 
         System.out.println("We are deciding on the price for our bottle of milk. Here is the description:");
         milk.type();
-        System.out.println("How much would you like to charge for the bottled water? (Input a numerical number taken to two decimal places)");
+        System.out.println("How much would you like to charge for the bottled milk? (Input a numerical number taken to two decimal places)");
         priceText = input.nextLine();
         price = Double.parseDouble(priceText);
         milk.setPrice(price);
@@ -77,6 +77,7 @@ public class Main {
         drinkMenu.add(milk);
 
         new Order(cupcakeMenu, drinkMenu);
+
         }
     }
 
